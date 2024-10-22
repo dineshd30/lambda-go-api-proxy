@@ -1,0 +1,37 @@
+### GET /healthcheck
+POST http://localhost:9000/2015-03-31/functions/function/invocations HTTP/1.1 
+Content-Type: application/json
+
+{
+  "path": "/healthcheck",
+  "httpMethod": "GET"
+}
+
+
+### Get /tests/123
+POST http://localhost:9000/2015-03-31/functions/function/invocations HTTP/1.1 
+Content-Type: application/json
+
+{
+  "path": "/tests/123",
+  "httpMethod": "GET"
+}
+
+### Post /tests
+POST http://localhost:9000/2015-03-31/functions/function/invocations HTTP/1.1 
+Content-Type: application/json
+
+{
+  "path": "/tests",
+  "httpMethod": "POST"
+}
+
+
+### Delete /tests/123
+POST http://localhost:9000/2015-03-31/functions/function/invocations HTTP/1.1 
+Content-Type: application/json
+
+{
+  "path": "/tests/123",
+  "httpMethod": "DELETE"
+}
